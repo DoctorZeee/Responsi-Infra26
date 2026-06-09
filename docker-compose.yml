@@ -57,6 +57,7 @@ services:
     depends_on:
       - db
     networks:
+      - frontend
       - backend
 
   db:
@@ -71,11 +72,10 @@ services:
     volumes:
       - db-data:/var/lib/mysql
     networks:
-      - frontend
       - backend
 
 volumes:
-  db_data:
+  db-data:
 
 networks:
   frontend:
