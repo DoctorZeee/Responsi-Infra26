@@ -92,18 +92,5 @@ Menyamakan nama volume menjadi `db-data` pada bagian `volumes`:
 volumes:
   db-data:
 ```
-
+Mengubah bagian sql dan config nginx karena ada tanda "```" kemudian mengubah posrt expose dari 8080 jadi 80 
 ---
-
-## Ringkasan Perubahan
-
-| No | File | Perubahan |
-|----|------|-----------|
-| 1 | `docker-compose.yml` | `services` → `services:` |
-| 2 | `docker-compose.yml` | web1 `DB_HOST: mysql` → `DB_HOST: db` |
-| 3 | `docker-compose.yml` | web2 `DB_PASS: wrongpassword` → `DB_PASS: student123` |
-| 4 | `docker-compose.yml` | web3 `context: ./web33` → `context: ./web3` |
-| 5 | `docker-compose.yml` | web3 ditambahkan network `frontend` |
-| 6 | `docker-compose.yml` | volume `database-data` → `db-data` |
-| 7 | `nginx/nginx.conf` | Konfigurasi upstream round robin untuk web1, web2, web3 |
-| 8 | `web*/index.php` | Identitas praktikan ditambahkan |
