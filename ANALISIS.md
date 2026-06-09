@@ -2,8 +2,8 @@
 
 ## Identitas Praktikan
 
-- **Nama Lengkap:** NAMA LENGKAP ANDA
-- **NIM:** NIM ANDA
+- **Nama Lengkap:** Dimas Rafif Zaidan
+- **NIM:** H1H024043
 
 ---
 
