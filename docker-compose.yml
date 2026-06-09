@@ -7,7 +7,7 @@ services:
       context: ./nginx
     container_name: nginx-lb
     ports:
-      - "8080:80"
+      - "8081:80"
     depends_on:
       - web1
       - web2
